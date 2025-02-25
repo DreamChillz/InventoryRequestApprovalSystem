@@ -1,0 +1,312 @@
+{
+    "className": "org.joget.apps.userview.model.Userview",
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.HtmlPage",
+                "properties": {
+                    "userviewCacheDuration": "",
+                    "userviewCacheScope": "",
+                    "permission_rules": {},
+                    "id": "38b13284-5c09-43e3-906b-dd1ce595a788",
+                    "label": "Welcome",
+                    "enableOffline": "",
+                    "customId": "welcome",
+                    "content": "<div class=\"ui-welcome\">\n<h1>Apps and Workflow Made Simple<\/h1>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_idea.png\" alt=\"Build apps\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Build apps, not just processes!<\/h3>\n<p>Create full-fledged apps with support for data records management.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_rocket.png\" alt=\"Increased efficiency\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Increased Efficiency and Productivity<\/h3>\n<p>Faster and more consistent completion of manual processes, and with minimal errors.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_cost.png\" alt=\"Lowered cost\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Lowered Cost<\/h3>\n<p>Employees can be guided through complex procedures, hence reducing the cost of training.<\/p>\n<\/div>\n<\/div>"
+                }
+            }],
+            "properties": {
+                "permission_rules": {},
+                "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+                "label": "<i class='fa fa-home'><\/i> Home"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "keyName": "",
+                        "label": "Submit Request",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "Submit",
+                        "id": "CEA58F2BD2EB4CE548662CAC69ECB96D",
+                        "processDefId": "inventoryRequisitionProcess",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Request History",
+                        "enableOffline": "",
+                        "customId": "requestHistory",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "inventoryRequestList",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "4077B31BF30B4FFA088C123676A6E11D"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {},
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "orgId": "ORG-001",
+                        "allowedGroupIds": "G-003"
+                    }
+                },
+                "comment": "",
+                "label": "Staff",
+                "id": "category-015D146356434659F5831C204ADB3EAF"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "assignment-customFooter": "",
+                        "label": "Manage Request",
+                        "enableOffline": "",
+                        "customId": "manageRequest",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "processId": "inventoryRequisitionProcess",
+                        "showPopup": "",
+                        "rowCount": "",
+                        "id": "64233A844EAD4C52A812610153C6C812",
+                        "list-customHeader": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Approval History",
+                        "enableOffline": "",
+                        "customId": "approvalHistory",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "requestApprovalList",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "7B9618406D7E426861B13CF17875337C"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {},
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "orgId": "ORG-001",
+                        "allowedGroupIds": "G-002"
+                    }
+                },
+                "comment": "",
+                "label": "Manager",
+                "id": "category-EE866DBCDD5E464249F54346CF1E8834"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [],
+            "properties": {
+                "hide": "",
+                "permission_rules": {},
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "orgId": "ORG-001",
+                        "allowedGroupIds": "G-004"
+                    }
+                },
+                "comment": "",
+                "label": "Supplier",
+                "id": "category-0544BA9839454828A865C508FB0ED8F5"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.plugin.enterprise.UniversalInboxMenu",
+                    "properties": {
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "assignment-customFooter": "",
+                        "label": "Inbox",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "showPopup": "",
+                        "rowCount": "",
+                        "id": "80B99FAD828842E0E11CFFB859DB3E6A",
+                        "list-customHeader": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "keyName": "",
+                        "label": "Inventory Requisition Process",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "inventoryRequisitionProcess",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "Submit",
+                        "id": "D064602B2B5C4E93164B9EB818D4C311",
+                        "processDefId": "inventoryRequisitionProcess",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {},
+                "permission": {
+                    "className": "org.joget.apps.userview.lib.GroupPermission",
+                    "properties": {
+                        "orgId": "ORG-001",
+                        "allowedGroupIds": "G-001"
+                    }
+                },
+                "comment": "",
+                "label": "Admin",
+                "id": "category-2E2D320EF8EB43316D298C317C12515D"
+            }
+        }
+    ],
+    "properties": {
+        "logoutText": "Logout",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#",
+        "name": "Inventory Request Approval System UI",
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "inventoryRequestApprovalUI"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "userviewDescription": "",
+        "userviewId": "inventoryRequestApprovalUI",
+        "permission_rules": [],
+        "hideThisUserviewInAppCenter": "",
+        "userview_thumbnail": "",
+        "userview_category": "",
+        "theme": {
+            "className": "org.joget.apps.userview.lib.AjaxUniversalTheme",
+            "properties": {
+                "dx8navBadge": "",
+                "css": "",
+                "loginBackground": "",
+                "dx8navLinkColor": "",
+                "disablePush": "",
+                "removeAssignmentTitle": "",
+                "shortcutLinkLabel": "",
+                "disableHelpGuide": "",
+                "logo": "",
+                "enableResponsiveSwitch": "",
+                "dx8headerFontColor": "",
+                "fav_icon": "",
+                "mobileViewDisabled": "",
+                "dx8navLinkIcon": "",
+                "horizontal_menu": "",
+                "profile": "",
+                "homeAttractBanner": "",
+                "dx8headingBgColor": "",
+                "dx8linkColor": "",
+                "homeUrl": "",
+                "dx8linkActiveColor": "",
+                "dx8footerColor": "",
+                "subheader": "",
+                "disablePwa": "",
+                "dx8contentbackground": "",
+                "loginPageBottom": "",
+                "dx8backgroundImage": "",
+                "dx8navBadgeText": "",
+                "dx8background": "",
+                "dx8headerColor": "",
+                "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(174, 202, 199);rgb(44, 101, 98);rgb(25, 118, 210);rgb(0, 75, 160)",
+                "dx8navBackground": "",
+                "compactTheme": "",
+                "js": "",
+                "dx8navActiveIconColor": "",
+                "dx8navScrollbarThumb": "",
+                "userMenu": [],
+                "urlsToCache": "",
+                "loginPageTop": "",
+                "userImage": "no",
+                "dx8buttonColor": "",
+                "shortcut": [],
+                "fontControl": "",
+                "dx8navActiveLinkBackground": "",
+                "dx8fontColor": "",
+                "dx8navLinkBackground": "",
+                "dx8buttonBackground": "",
+                "dx8contentFontColor": "",
+                "subfooter": "",
+                "mobileCacheEnabled": "",
+                "dx8footerBackground": "",
+                "dx8headingFontColor": "",
+                "dx8primaryColor": "",
+                "darkMode": "",
+                "dx8navActiveLinkColor": "",
+                "inbox": ""
+            }
+        },
+        "permission": {
+            "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+            "properties": {}
+        },
+        "userviewName": "Inventory Request Approval System UI"
+    }}
+}
