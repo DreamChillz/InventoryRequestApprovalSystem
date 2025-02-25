@@ -86,6 +86,17 @@
                             "properties": {}
                         }
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextArea",
+                    "properties": {
+                        "readonly": "False",
+                        "label": "Text Area",
+                        "id": "field4",
+                        "rows": "5",
+                        "cols": "20",
+                        "readonlyLabel": "False"
+                    }
                 }
             ],
             "className": "org.joget.apps.form.model.Column",
