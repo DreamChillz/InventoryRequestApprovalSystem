@@ -1,0 +1,16 @@
+<appDefinition>
+   <appId>inventoryRequestApprovalSystem</appId>
+   <id>inventoryRequestApprovalSystem</id>
+   <version></version>
+   <name>Inventory Request Approval System</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList/>
+   <messageList/>
+   <resourceList/>
+   <license>Tk/G6EK9lMRXVFU/8UKO2zN0uocQQUFKZVNszTVZ696ia9DUPK0oMfpirevOVS++pAmv5KAud+iCPcMd7aOitwe/uzY3bpUPVf+bVms5nN6Pi9aCqMyqNg==</license>
+</appDefinition>
