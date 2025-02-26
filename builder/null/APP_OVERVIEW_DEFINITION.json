@@ -1,0 +1,154 @@
+{
+    "form:submitInventoryRequest": {
+        "data": [
+            {
+                "path": "elements[0].elements[0].elements[0].properties.value",
+                "isError": false,
+                "label": "#currentUser.fullName#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#currentUser.fullName#"
+            },
+            {
+                "path": "elements[0].elements[0].elements[1].properties.dataFormat",
+                "isError": false,
+                "label": "#date.dd-MM-yyyy HH:mm:ss#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#date.dd-MM-yyyy HH:mm:ss#"
+            },
+            {
+                "path": "elements[0].elements[0].elements[1].properties.value",
+                "isError": false,
+                "label": "#date.dd-MM-yyyy HH:mm:ss#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#date.dd-MM-yyyy HH:mm:ss#"
+            }
+        ],
+        "lastModifiedDate": "Feb 24, 2025, 11:33:23 AM"
+    },
+    "userview:inventoryRequestApprovalUI": {
+        "data": [
+            {
+                "path": "properties.welcomeMessage",
+                "isError": false,
+                "label": "#date.EEE, d MMM yyyy#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#date.EEE, d MMM yyyy#"
+            },
+            {
+                "path": "categories[0].menus[0].properties.content",
+                "isError": false,
+                "label": "#request.contextPath#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "<div class=\"ui-welcome\">\n<h1>Apps and Workflow Made Simple<\/h1>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_idea.png\" alt=\"Build apps\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Build apps, not just processes!<\/h3>\n<p>Create full-fledged apps with support for data records management.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_rocket.png\" alt=\"Increased efficiency\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Increased Efficiency and Productivity<\/h3>\n<p>Faster and more consistent completion of manual processes, and with minimal errors.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_cost.png\" alt=\"Lowered cost\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Lowered Cost<\/h3>\n<p>Employees can be guided through complex procedures, hence reducing the cost of training.<\/p>\n<\/div>\n<\/div>"
+            },
+            {
+                "path": "categories[0].menus[0].properties.content",
+                "isError": false,
+                "label": "#request.contextPath#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "<div class=\"ui-welcome\">\n<h1>Apps and Workflow Made Simple<\/h1>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_idea.png\" alt=\"Build apps\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Build apps, not just processes!<\/h3>\n<p>Create full-fledged apps with support for data records management.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_rocket.png\" alt=\"Increased efficiency\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Increased Efficiency and Productivity<\/h3>\n<p>Faster and more consistent completion of manual processes, and with minimal errors.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_cost.png\" alt=\"Lowered cost\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Lowered Cost<\/h3>\n<p>Employees can be guided through complex procedures, hence reducing the cost of training.<\/p>\n<\/div>\n<\/div>"
+            },
+            {
+                "path": "categories[0].menus[0].properties.content",
+                "isError": false,
+                "label": "#request.contextPath#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "<div class=\"ui-welcome\">\n<h1>Apps and Workflow Made Simple<\/h1>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_idea.png\" alt=\"Build apps\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Build apps, not just processes!<\/h3>\n<p>Create full-fledged apps with support for data records management.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_rocket.png\" alt=\"Increased efficiency\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Increased Efficiency and Productivity<\/h3>\n<p>Faster and more consistent completion of manual processes, and with minimal errors.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_cost.png\" alt=\"Lowered cost\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Lowered Cost<\/h3>\n<p>Employees can be guided through complex procedures, hence reducing the cost of training.<\/p>\n<\/div>\n<\/div>"
+            },
+            {
+                "path": "categories[0].menus[0].properties.content",
+                "isError": false,
+                "label": "",
+                "tool": "org.joget.apps.app.lib.WebCodingOverviewTool",
+                "content": "<div class=\"ui-welcome\">\n<h1>Apps and Workflow Made Simple<\/h1>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_idea.png\" alt=\"Build apps\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Build apps, not just processes!<\/h3>\n<p>Create full-fledged apps with support for data records management.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_rocket.png\" alt=\"Increased efficiency\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Increased Efficiency and Productivity<\/h3>\n<p>Faster and more consistent completion of manual processes, and with minimal errors.<\/p>\n<\/div>\n<p>&nbsp;<\/p>\n<div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left;\"><img src=\"#request.contextPath#/images/icon_cost.png\" alt=\"Lowered cost\" width=\"120\" height=\"85\"><\/div>\n<div class=\"message\">\n<h3>Lowered Cost<\/h3>\n<p>Employees can be guided through complex procedures, hence reducing the cost of training.<\/p>\n<\/div>\n<\/div>"
+            },
+            {
+                "path": "properties.welcomeMessage",
+                "isError": false,
+                "label": "#date.EEE, d MMM yyyy#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#date.EEE, d MMM yyyy#"
+            }
+        ],
+        "lastModifiedDate": "Feb 24, 2025, 11:55:39 AM"
+    },
+    "process:restockingRequestProcess": {
+        "data": [],
+        "lastModifiedDate": "Feb 25, 2025, 7:19:31 AM"
+    },
+    "datalist:requestApprovalList": {
+        "data": [],
+        "lastModifiedDate": "Feb 24, 2025, 11:53:37 AM"
+    },
+    "datalist:inventoryRequestList": {
+        "data": [],
+        "lastModifiedDate": "Feb 24, 2025, 11:59:06 AM"
+    },
+    "form:approveRejectRequest": {
+        "data": [
+            {
+                "path": "elements[0].elements[0].elements[2].properties.value",
+                "isError": false,
+                "label": "#currentUser.fullName#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#currentUser.fullName#"
+            },
+            {
+                "path": "elements[0].elements[0].elements[3].properties.dataFormat",
+                "isError": false,
+                "label": "#date.dd-MM-yyyy HH:mm:ss#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#date.dd-MM-yyyy HH:mm:ss#"
+            },
+            {
+                "path": "elements[0].elements[0].elements[3].properties.value",
+                "isError": false,
+                "label": "#date.dd-MM-yyyy HH:mm:ss#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#date.dd-MM-yyyy HH:mm:ss#"
+            }
+        ],
+        "lastModifiedDate": "Feb 24, 2025, 11:35:05 AM"
+    },
+    "process:inventoryRequisitionProcess": {
+        "data": [
+            {
+                "path": "activityPlugins.inventoryRequisitionProcess::notifyRejectedRequest.properties.tools[0].properties.toParticipantId",
+                "isError": false,
+                "label": "#performer.submitRequest.id#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#performer.submitRequest.id#"
+            },
+            {
+                "badgeColor": "#795548",
+                "path": "activityPlugins.inventoryRequisitionProcess::notifyRejectedRequest.properties.tools[0].properties.host",
+                "badge": "SMTP",
+                "isError": false,
+                "label": "",
+                "tool": "org.joget.apps.app.lib.IntegrationOverviewTool",
+                "content": "smtp.mail.yahoo.com"
+            },
+            {
+                "path": "activityPlugins.inventoryRequisitionProcess::notifyApprovedRequest.properties.tools[0].properties.toParticipantId",
+                "isError": false,
+                "label": "#performer.submitRequest.id#",
+                "tool": "org.joget.apps.app.lib.HashVariableOverviewTool",
+                "content": "#performer.submitRequest.id#"
+            },
+            {
+                "badgeColor": "#795548",
+                "path": "activityPlugins.inventoryRequisitionProcess::notifyApprovedRequest.properties.tools[0].properties.host",
+                "badge": "SMTP",
+                "isError": false,
+                "label": "",
+                "tool": "org.joget.apps.app.lib.IntegrationOverviewTool",
+                "content": "smtp.mail.yahoo.com"
+            }
+        ],
+        "lastModifiedDate": "Feb 25, 2025, 7:19:31 AM"
+    },
+    "form:restockingRequest": {
+        "data": [],
+        "lastModifiedDate": "Feb 25, 2025, 12:59:37 PM"
+    }
+}

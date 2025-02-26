@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Package xmlns="http://www.wfmc.org/2002/XPDL1.0" xmlns:xpdl="http://www.wfmc.org/2002/XPDL1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="inventoryRequestApprovalSystem" Name="Inventory Request Approval System" xsi:schemaLocation="http://www.wfmc.org/2002/XPDL1.0 http://wfmc.org/standards/docs/TC-1025_schema_10_xpdl.xsd">
+    <PackageHeader>
+        <XPDLVersion>1.0</XPDLVersion>
+        <Vendor/>
+        <Created/>
+    </PackageHeader>
+    <Script Type="text/javascript"/>
+    <Participants>
+        <Participant Id="staff" Name="Staff">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="manager" Name="Manager">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="system" Name="System">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="inventory_manager" Name="Inventory Manager">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="supplier" Name="Supplier">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+        <Participant Id="systemRestock" Name="System">
+            <ParticipantType Type="ROLE"/>
+        </Participant>
+    </Participants>
+    <Applications>
+        <Application Id="default_application"/>
+    </Applications>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="inventoryRequisitionProcess" Name="Inventory Requisition Process">
+            <ProcessHeader DurationUnit="m"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="submitRequest" Name="Submit Request">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>staff</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="staff"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="212,46.000004752929684"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="requestApproval" Name="Request Approval">
+                    <Limit>5</Limit>
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>manager</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="manager"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="210.9375,36.6562547529297"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route1" Name="Approved?">
+                    <Route/>
+                    <Performer>manager</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition4"/>
+                                    <TransitionRef Id="transition5"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="manager"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="445.0625,47.33334062939454"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="notifyApprovedRequest" Name="Notify Approved Request">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>system</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="system"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="412.9375,36.31250475292967"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="notifyRejectedRequest" Name="Notify Rejected Request">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>system</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="system"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="724.9375,31.31250475292967"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="submitRequest" Id="transition2" To="requestApproval">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="requestApproval" Id="transition3" To="route1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition4" Name="Approved" To="notifyApprovedRequest">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route1" Id="transition5" Name="Rejected" To="notifyRejectedRequest">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="staff;manager;system"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=staff,CONNECTING_ACTIVITY_ID=submitRequest,X_OFFSET=78,Y_OFFSET=67.00000475292968,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=system,CONNECTING_ACTIVITY_ID=notifyApprovedRequest,X_OFFSET=574.0625,Y_OFFSET=64.0312394941406,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=system,CONNECTING_ACTIVITY_ID=notifyRejectedRequest,X_OFFSET=881.0625,Y_OFFSET=54.03125475292967,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+        <WorkflowProcess Id="restockingRequestProcess" Name="Restocking Request Process">
+            <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="status" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <Activities>
+                <Activity Id="submit_restocking_request" Name="Submit Restocking Request">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>inventory_manager</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inventory_manager"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="200,20"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="receive_restocking_request" Name="Receive Restocking Request">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>supplier</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="supplier"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="201,34"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_stock_delivery_status" Name="Update Stock Delivery Status">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>supplier</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="supplier"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="414,35"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="update_inventory_database" Name="Update Inventory Database">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>inventory_manager</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="inventory_manager"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="499,29"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activity4" Name="Notify Staff">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>systemRestock</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRestock"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="526,29"/>
+                    </ExtendedAttributes>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="submit_restocking_request" Id="transition1" To="receive_restocking_request">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="receive_restocking_request" Id="transition2" To="update_stock_delivery_status">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_stock_delivery_status" Id="transition3" To="update_inventory_database">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="update_inventory_database" Id="transition4" To="activity4">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+            </Transitions>
+            <ExtendedAttributes>
+                <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="inventory_manager;supplier;systemRestock"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=inventory_manager,CONNECTING_ACTIVITY_ID=submit_restocking_request,X_OFFSET=75,Y_OFFSET=46,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=systemRestock,CONNECTING_ACTIVITY_ID=activity4,X_OFFSET=683,Y_OFFSET=55,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+            </ExtendedAttributes>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+</Package>
