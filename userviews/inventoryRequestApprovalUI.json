@@ -208,6 +208,27 @@
                         "redirectUrlAfterComplete": "",
                         "fieldPassover": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Request Approval History",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "requestApprovalList",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "B7B10CD1481D42F7BC94893986BCA1C3"
+                    }
                 }
             ],
             "properties": {
