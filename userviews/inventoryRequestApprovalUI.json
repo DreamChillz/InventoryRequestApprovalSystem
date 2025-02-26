@@ -163,6 +163,29 @@
                         "rowCount": "",
                         "id": "7B9618406D7E426861B13CF17875337C"
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "keyName": "",
+                        "label": "Request Items Restock",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "4B1004555BC344C8A8E6F125EB56522D",
+                        "processDefId": "restockingRequestProcess",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
                 }
             ],
             "properties": {
