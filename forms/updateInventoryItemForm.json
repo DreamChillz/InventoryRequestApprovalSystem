@@ -1,28 +1,64 @@
 {
     "elements": [{
         "elements": [{
-            "elements": [{
-                "className": "org.joget.apps.form.lib.SubForm",
-                "properties": {
-                    "parentSubFormId": "",
-                    "permissionHidden": "",
-                    "readonly": "true",
-                    "loadBinder": {
-                        "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                        "properties": {}
-                    },
-                    "noframe": "",
-                    "formDefId": "updateRestockingStatus",
-                    "subFormParentId": "",
-                    "id": "field1",
-                    "label": "",
-                    "storeBinder": {
-                        "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                        "properties": {}
-                    },
-                    "readonlyLabel": ""
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "properties": {
+                                "jdbcDriver": "com.mysql.jdbc.Driver",
+                                "useAjax": "",
+                                "jdbcUser": "root",
+                                "jdbcUrl": "jdbc:mysql://localhost/jwdb?characterEncoding=UTF8&useSSL=false",
+                                "addEmpty": "true",
+                                "jdbcPassword": "%%%%k+9LHizln/Ul5ODsGqUacQ==%%%%",
+                                "jdbcDatasource": "custom",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "sql": "Select item_name from inventory_items"
+                            }
+                        },
+                        "multiple": "",
+                        "options": [],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "label": "Select Inventory Item",
+                        "id": "select_inventory_item",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "parentSubFormId": "",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "",
+                        "formDefId": "updateRestockingStatus",
+                        "subFormParentId": "",
+                        "id": "field1",
+                        "label": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "readonlyLabel": ""
+                    }
                 }
-            }],
+            ],
             "className": "org.joget.apps.form.model.Column",
             "properties": {"width": "100%"}
         }],
