@@ -1,7 +1,63 @@
 {
     "elements": [{
         "elements": [{
-            "elements": [],
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "parentSubFormId": "",
+                        "readonly": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "",
+                        "formDefId": "restockingRequest",
+                        "subFormParentId": "",
+                        "id": "update_status_restocking",
+                        "label": "Update Status Restocking Request",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "readonly": "",
+                        "size": "",
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "multiple": "",
+                        "options": [
+                            {
+                                "label": "Ordered",
+                                "value": "Ordered",
+                                "grouping": ""
+                            },
+                            {
+                                "label": "Delivered",
+                                "value": "Delivered",
+                                "grouping": ""
+                            }
+                        ],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "select_status",
+                        "label": "Select Status",
+                        "id": "select_status",
+                        "value": "",
+                        "readonlyLabel": ""
+                    }
+                }
+            ],
             "className": "org.joget.apps.form.model.Column",
             "properties": {"width": "100%"}
         }],
