@@ -127,20 +127,17 @@
             "visibilityControl": "",
             "permissionReadonly": "",
             "permission": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.apps.userview.lib.GroupPermission",
+                "properties": {
+                    "orgId": "",
+                    "allowedGroupIds": ""
+                }
             },
             "label": "",
             "reverse": "",
             "storeBinder": {
-                "className": "org.joget.plugin.enterprise.DatabaseWizardStoreBinder",
-                "properties": {
-                    "autoHandleWorkflowVariable": "true",
-                    "keyColumn": "id",
-                    "jdbcDatasource": "default",
-                    "tableName": "app_fd_restocking_request",
-                    "autoHandleFiles": ""
-                }
+                "className": "",
+                "properties": {}
             },
             "visibilityValue": "",
             "regex": "",
