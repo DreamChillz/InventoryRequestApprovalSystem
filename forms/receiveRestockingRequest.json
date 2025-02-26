@@ -50,25 +50,26 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.Radio",
+                    "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "fullWidth": "true",
                         "controlField": "",
                         "readonly": "",
+                        "size": "",
                         "optionsBinder": {
                             "className": "",
                             "properties": {}
                         },
+                        "multiple": "",
                         "options": [
                             {
-                                "label": "Pending Confirmation",
-                                "value": "Pending Confirmation",
-                                "grouping": "group1"
+                                "label": "Pending",
+                                "value": "Pending",
+                                "grouping": ""
                             },
                             {
                                 "label": "Ordered",
                                 "value": "Ordered",
-                                "grouping": "group1"
+                                "grouping": ""
                             }
                         ],
                         "validator": {
@@ -76,8 +77,8 @@
                             "properties": {}
                         },
                         "workflowVariable": "",
-                        "label": "Status",
-                        "id": "status",
+                        "label": "Select Status",
+                        "id": "select_status",
                         "value": "",
                         "readonlyLabel": ""
                     }
