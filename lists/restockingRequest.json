@@ -8,9 +8,17 @@
     "id": "restockingRequest",
     "filters": [],
     "binder": {
-        "name": "",
-        "className": "",
-        "properties": {}
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "restockingRequest",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": "",
+            "functionColumns": []
+        }
     },
     "actions": [],
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
