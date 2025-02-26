@@ -12,7 +12,7 @@
                             "properties": {
                                 "regex": "",
                                 "formDefId": "createInventory",
-                                "errorDuplicateMsg": "",
+                                "errorDuplicateMsg": "This id already exits",
                                 "mandatory": "true",
                                 "errorFormatMsg": "",
                                 "fieldId": "id"
@@ -111,8 +111,8 @@
                         "workflowVariable": "",
                         "style": "",
                         "id": "current_quantity",
-                        "placeholder": "",
-                        "value": "0",
+                        "placeholder": "0",
+                        "value": "",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
@@ -137,8 +137,8 @@
                         "workflowVariable": "",
                         "style": "",
                         "id": "min_quantity",
-                        "placeholder": "",
-                        "value": "0",
+                        "placeholder": "0",
+                        "value": "",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
@@ -163,8 +163,8 @@
                         "workflowVariable": "",
                         "style": "",
                         "id": "price",
-                        "placeholder": "",
-                        "value": "0",
+                        "placeholder": "0.00",
+                        "value": "",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
