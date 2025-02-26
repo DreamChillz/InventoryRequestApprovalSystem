@@ -11,6 +11,14 @@
         {
             "filterable": true,
             "hidden": "false",
+            "name": "id",
+            "id": "column_0",
+            "label": "ID",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
             "name": "item_name",
             "id": "column_1",
             "label": "item_name",
@@ -38,6 +46,22 @@
             "name": "min_quantity",
             "id": "column_3",
             "label": "min_quantity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "price",
+            "id": "column_6",
+            "label": "Price",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "dateModified",
+            "id": "column_5",
+            "label": "Date Modified",
             "sortable": "false"
         }
     ],
