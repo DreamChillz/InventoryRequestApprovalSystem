@@ -24,6 +24,32 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.form.lib.DatePicker",
+                    "properties": {
+                        "yearRange": "c-10:c+10",
+                        "dataFormat": "#date.dd-MM-yyyy HH:mm:ss#",
+                        "startDateFieldId": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "format": "",
+                        "label": "Date Delivered",
+                        "datePickerType": "dateTime",
+                        "currentDateAs": "",
+                        "endDateFieldId": "",
+                        "readonly": "",
+                        "allowManual": "",
+                        "workflowVariable": "",
+                        "id": "date_delivered",
+                        "placeholder": "",
+                        "disableWeekends": "",
+                        "value": "#date.dd-MM-yyyy HH:mm:ss#",
+                        "readonlyLabel": "",
+                        "format24hr": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
