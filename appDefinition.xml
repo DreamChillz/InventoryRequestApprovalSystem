@@ -19,16 +19,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>restockingRequestProcess::activity4</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>activity4</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>inventoryRequisitionProcess::submitRequest</string>
                <packageActivityForm>
                   <processDefId>inventoryRequisitionProcess</processDefId>
@@ -36,6 +26,16 @@
                   <formId>submitInventoryRequest</formId>
                   <type>SINGLE</type>
                   <autoContinue>true</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequestProcess::activity4</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequestProcess</processDefId>
+                  <activityDefId>activity4</activityDefId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
