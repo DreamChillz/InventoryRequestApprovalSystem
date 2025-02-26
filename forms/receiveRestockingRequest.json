@@ -126,11 +126,8 @@
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
-            "className": "org.joget.apps.userview.lib.GroupPermission",
-            "properties": {
-                "orgId": "ORG-001",
-                "allowedGroupIds": "G-001;G-004"
-            }
+            "className": "",
+            "properties": {}
         },
         "id": "receiveRestockingRequest",
         "postProcessor": {
