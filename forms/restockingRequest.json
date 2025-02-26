@@ -154,7 +154,7 @@
     }],
     "className": "org.joget.apps.form.model.Form",
     "properties": {
-        "noPermissionMessage": "Login to manager account to access this form.",
+        "noPermissionMessage": "",
         "loadBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
@@ -163,11 +163,8 @@
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
-            "className": "org.joget.apps.userview.lib.GroupPermission",
-            "properties": {
-                "orgId": "ORG-001",
-                "allowedGroupIds": "G-002"
-            }
+            "className": "",
+            "properties": {}
         },
         "id": "restockingRequest",
         "postProcessor": {
