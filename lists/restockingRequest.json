@@ -19,7 +19,8 @@
             "name": "requested_items",
             "id": "column_0",
             "label": "requested_items",
-            "sortable": "false"
+            "sortable": "false",
+            "datalist_type": "column"
         },
         {
             "filterable": true,
@@ -40,7 +41,11 @@
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {
-            "joins": [],
+            "joins": [{
+                "joinFieldId": "id",
+                "tableName": "inventory_item",
+                "fieldId": "inventory_item.item_id"
+            }],
             "aggregateField": [],
             "formDefId": "restockingRequest",
             "customSelectionValue": "",
