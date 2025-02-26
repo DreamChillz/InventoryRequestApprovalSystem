@@ -3,6 +3,9 @@
         "className": "",
         "properties": {}
     },
+    "considerFilterWhenGetTotal": "",
+    "useSession": "",
+    "responsiveMode": "",
     "rowActions": [],
     "columns": [
         {
@@ -62,12 +65,20 @@
             "sortable": "false"
         }
     ],
+    "draggabletable": "",
+    "cardCollapsible": "",
     "pageSize": "0",
     "orderBy": "",
     "description": "",
     "filters": [],
+    "showDataWhenFilterSet": "",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
-    "name": "Inventory Item",
+    "hidePageSize": "",
+    "disableResponsive": "",
+    "cardCollapseByDefault": "",
+    "name": "Inventory Item List",
+    "rowActionsMode": "",
+    "showhidecolumns": "",
     "id": "inventoryItem",
     "binder": {
         "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
