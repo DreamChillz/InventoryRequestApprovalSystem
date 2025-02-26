@@ -20,31 +20,10 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>inventoryRequisitionProcess::submitRequest</string>
-               <packageActivityForm>
-                  <processDefId>inventoryRequisitionProcess</processDefId>
-                  <activityDefId>submitRequest</activityDefId>
-                  <formId>submitInventoryRequest</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>true</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>restockingRequestProcess::activity4</string>
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>activity4</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::runProcess</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>runProcess</activityDefId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -82,6 +61,17 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>restockingRequest_assignment_process::resolve</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>resolve</activityDefId>
+                  <formId>restockingRequest_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>restockingRequestProcess::receive_restocking_request</string>
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
@@ -90,6 +80,60 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::verify</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>verify</activityDefId>
+                  <formId>restockingRequest_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::clarify</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>clarify</activityDefId>
+                  <formId>restockingRequest_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>inventoryRequisitionProcess::submitRequest</string>
+               <packageActivityForm>
+                  <processDefId>inventoryRequisitionProcess</processDefId>
+                  <activityDefId>submitRequest</activityDefId>
+                  <formId>submitInventoryRequest</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>true</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequestProcess::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequestProcess</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>restockingRequest_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -102,15 +146,44 @@
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::assign</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>assign</activityDefId>
+                  <formId>restockingRequest_assp_main</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
          </packageActivityFormMap>
          <packageActivityPluginMap>
             <entry>
-               <string>inventoryRequisitionProcess::route1</string>
+               <string>restockingRequest_assignment_process::resolved_notification</string>
                <packageActivityPlugin>
-                  <processDefId>inventoryRequisitionProcess</processDefId>
-                  <activityDefId>route1</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
-                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;status&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Approve&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition4&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;name&quot;:&quot;transition5&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>resolved_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your 3 - Restocking Request (#form.restocking_request.caseNo#) Has Been Resolved&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour 3 - Restocking Request (#form.restocking_request.caseNo#) has been Resolved.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::assignment_rejected_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>assignment_rejected_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_applicant_hod&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;3 - Restocking Request (#form.restocking_request.caseNo#) Requires Your Attention&quot;,     &quot;message&quot;: &quot;Hi,\n\n3 - Restocking Request (#form.restocking_request.caseNo#) requires your attention.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::updated_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>updated_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;3 - Restocking Request (#form.restocking_request.caseNo#) Has Been Re-opened&quot;,     &quot;message&quot;: &quot;Hi,\n\n3 - Restocking Request (#form.restocking_request.caseNo#) has been re-opened.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -129,6 +202,87 @@
                   <activityDefId>notifyApprovedRequest</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
                   <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.EmailTool&quot;,&quot;properties&quot;:{&quot;cc&quot;:&quot;wanyin0892@yahoo.com&quot;,&quot;toSpecific&quot;:&quot;wanyin0892@yahoo.com&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;icsAttachement&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Inventory Request Approval&quot;,&quot;retryCount&quot;:&quot;3&quot;,&quot;formDefId&quot;:&quot;approveRejectRequest&quot;,&quot;toParticipantId&quot;:&quot;#performer.submitRequest.id#&quot;,&quot;message&quot;:&quot;Hi,\n\nYour inventory request has been approved. Your order(s) will be placed in 3 - 5 business day.\n\nThank you.&quot;,&quot;p12&quot;:&quot;&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;password&quot;:&quot;%%%%ybghvUZvaYAh8zEWAeH3lhpBSH5lgZX5%%%%&quot;,&quot;storepass&quot;:&quot;%%%%pEjRau2Afd18QTqYtkWQO7oH95/Nj8SsEFM/JF1JCz4=%%%%&quot;,&quot;port&quot;:&quot;587&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;host&quot;:&quot;smtp.mail.yahoo.com&quot;,&quot;alias&quot;:&quot;&quot;,&quot;files&quot;:[],&quot;from&quot;:&quot;wanyin0892@yahoo.com&quot;,&quot;retryInterval&quot;:&quot;3&quot;,&quot;fields&quot;:[],&quot;username&quot;:&quot;wanyin0892@yahoo.com&quot;}}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::clarification_needed_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>clarification_needed_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your 3 - Restocking Request (#form.restocking_request.caseNo#) Needs Clarification&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour 3 - Restocking Request (#form.restocking_request.caseNo#) requires clarification.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>inventoryRequisitionProcess::route1</string>
+               <packageActivityPlugin>
+                  <processDefId>inventoryRequisitionProcess</processDefId>
+                  <activityDefId>route1</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;status&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Approve&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition4&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;name&quot;:&quot;transition5&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::assignment_due_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>assignment_due_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_applicant_hod&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;3 - Restocking Request (#form.restocking_request.caseNo#) Requires Your Attention&quot;,     &quot;message&quot;: &quot;Hi,\n\n3 - Restocking Request (#form.restocking_request.caseNo#) requires your attention.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::activity_trail_update</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>activity_trail_update</activityDefId>
+                  <pluginName>org.joget.plugin.enterprise.PresetFormDataTool</pluginName>
+                  <pluginProperties>{     &quot;formDefId&quot;: &quot;restockingRequest_assp_action&quot;,     &quot;fields&quot;: [{             &quot;field&quot;: &quot;id&quot;         }, {             &quot;field&quot;: &quot;username&quot;         }, {             &quot;field&quot;: &quot;action&quot;         }, {             &quot;field&quot;: &quot;remarks&quot;         }, {             &quot;field&quot;: &quot;fk&quot;         }],     &quot;data&quot;: &quot;#date.yyyyMMddHHmmssSSS#,-,Assignment Due,System Activity,#form.restocking_request.id#&quot; }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::reopened_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>reopened_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;3 - Restocking Request (#form.restocking_request.caseNo#) Has Been Re-opened&quot;,     &quot;message&quot;: &quot;Hi,\n\n3 - Restocking Request (#form.restocking_request.caseNo#) has been Re-opened.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::rejected_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>rejected_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_applicant&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;Your 3 - Restocking Request (#form.restocking_request.caseNo#) Has Been Rejected&quot;,     &quot;message&quot;: &quot;Hi,\n\nYour 3 - Restocking Request (#form.restocking_request.caseNo#) has been rejected.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::new_submission_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>new_submission_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_applicant_hod&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;New 3 - Restocking Request (#form.restocking_request.caseNo#) Received&quot;,     &quot;message&quot;: &quot;Hi,\n\nA new 3 - Restocking Request (#form.restocking_request.caseNo#) has been received.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::new_assignment_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>new_assignment_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;You Received New Assignment for 3 - Restocking Request (#form.restocking_request.caseNo#)&quot;,     &quot;message&quot;: &quot;Hi,\n\nYou received new assignment for 3 - Restocking Request (#form.restocking_request.caseNo#).\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::closed_notification</string>
+               <packageActivityPlugin>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <activityDefId>closed_notification</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{     &quot;host&quot;: &quot;&quot;,     &quot;port&quot;: &quot;&quot;,     &quot;security&quot;: &quot;&quot;,     &quot;username&quot;: &quot;&quot;,     &quot;password&quot;: &quot;&quot;,     &quot;from&quot;: &quot;&quot;,     &quot;toSpecific&quot;: &quot;&quot;,     &quot;toParticipantId&quot;: &quot;restockingRequest_assp_assignee&quot;,     &quot;cc&quot;: &quot;&quot;,     &quot;subject&quot;: &quot;3 - Restocking Request (#form.restocking_request.caseNo#) Has Been Closed&quot;,     &quot;message&quot;: &quot;Hi,\n\n3 - Restocking Request (#form.restocking_request.caseNo#) has been closed.\n\n==  This is a system generated message. == &quot;,     &quot;isHtml&quot;: &quot;&quot;,     &quot;formDefId&quot;: &quot;&quot;,     &quot;fields&quot;: [],     &quot;files&quot;: [] }</pluginProperties>
                </packageActivityPlugin>
             </entry>
          </packageActivityPluginMap>
@@ -152,12 +306,30 @@
                </packageParticipant>
             </entry>
             <entry>
+               <string>restockingRequest_assignment_process::restockingRequest_assp_applicant_hod</string>
+               <packageParticipant>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <participantId>restockingRequest_assp_applicant_hod</participantId>
+                  <type>requesterHod</type>
+                  <value>runProcess</value>
+               </packageParticipant>
+            </entry>
+            <entry>
                <string>inventoryRequisitionProcess::staff</string>
                <packageParticipant>
                   <processDefId>inventoryRequisitionProcess</processDefId>
                   <participantId>staff</participantId>
                   <type>group</type>
                   <value>G-001;G-003</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::restockingRequest_assp_applicant</string>
+               <packageParticipant>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <participantId>restockingRequest_assp_applicant</participantId>
+                  <type>requester</type>
+                  <value>runProcess</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -176,6 +348,15 @@
                   <participantId>manager</participantId>
                   <type>group</type>
                   <value>G-001;G-002</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>restockingRequest_assignment_process::restockingRequest_assp_assignee</string>
+               <packageParticipant>
+                  <processDefId>restockingRequest_assignment_process</processDefId>
+                  <participantId>restockingRequest_assp_assignee</participantId>
+                  <type>workflowVariable</type>
+                  <value>assignee,user</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
