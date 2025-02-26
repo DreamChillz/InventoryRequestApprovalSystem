@@ -63,16 +63,16 @@
                         "errorMessage": "Invalid number of rows",
                         "options": [
                             {
-                                "label": "Food ID",
-                                "value": "foodID"
+                                "label": "Item ID",
+                                "value": "itemID"
                             },
                             {
-                                "label": "Food Name",
-                                "value": "foodName"
+                                "label": "Item Name",
+                                "value": "itemName"
                             },
                             {
-                                "label": "Quantity",
-                                "value": "quantity"
+                                "label": "Requested Quantity",
+                                "value": "requestedQuantity"
                             }
                         ],
                         "validator": {
