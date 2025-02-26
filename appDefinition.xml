@@ -9,30 +9,11 @@
          <name>Inventory Request Approval System</name>
          <packageActivityFormMap>
             <entry>
-               <string>inventoryRequisitionProcess::activity3</string>
-               <packageActivityForm>
-                  <processDefId>inventoryRequisitionProcess</processDefId>
-                  <activityDefId>activity3</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>restockingRequestProcess::submit_restocking_request</string>
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>submit_restocking_request</activityDefId>
                   <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>inventoryRequisitionProcess::activity2</string>
-               <packageActivityForm>
-                  <processDefId>inventoryRequisitionProcess</processDefId>
-                  <activityDefId>activity2</activityDefId>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
