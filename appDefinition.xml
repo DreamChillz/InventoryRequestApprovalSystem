@@ -34,6 +34,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>activity4</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -55,6 +56,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>runProcess</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -108,6 +110,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>update_inventory_database</activityDefId>
+                  <formId>updateInventoryItemForm</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -178,15 +181,6 @@
                   <participantId>supplier</participantId>
                   <type>group</type>
                   <value>G-004</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>updateInventoryQuantityProcess::inventory_manager_update</string>
-               <packageParticipant>
-                  <processDefId>updateInventoryQuantityProcess</processDefId>
-                  <participantId>inventory_manager_update</participantId>
-                  <type>group</type>
-                  <value>G-002</value>
                </packageParticipant>
             </entry>
             <entry>
