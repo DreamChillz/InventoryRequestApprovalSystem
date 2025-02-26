@@ -151,7 +151,7 @@
     }],
     "className": "org.joget.apps.form.model.Form",
     "properties": {
-        "noPermissionMessage": "",
+        "noPermissionMessage": "Login to manager account to access this form.",
         "loadBinder": {
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
