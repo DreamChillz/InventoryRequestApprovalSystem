@@ -291,6 +291,7 @@
     },
     "setting": {"properties": {
         "__": "",
+        "tempDisablePermissionChecking": "",
         "userviewDescription": "",
         "userviewId": "inventoryRequestApprovalUI",
         "permission_rules": [],
@@ -362,6 +363,6 @@
             "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
             "properties": {}
         },
-        "userviewName": "Inventory Request Approval System UI"
+        "userviewName": "Inventory Request Approval System"
     }}
 }
