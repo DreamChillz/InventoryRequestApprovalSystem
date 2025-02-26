@@ -1,0 +1,87 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "rowActions": [],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "item_id",
+            "id": "column_0",
+            "label": "item_id",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "item_name",
+            "id": "column_1",
+            "label": "item_name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "category",
+            "id": "column_4",
+            "label": "category",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "current_quantity",
+            "id": "column_2",
+            "label": "current_quantity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "min_quantity",
+            "id": "column_3",
+            "label": "min_quantity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "last_updated",
+            "id": "column_5",
+            "label": "last_updated",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "supplier_id",
+            "id": "column_6",
+            "label": "supplier_id",
+            "sortable": "false"
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "",
+    "description": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "Inventory Item",
+    "id": "inventoryItem",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.JdbcDataListBinder",
+        "properties": {
+            "jdbcDriver": "com.mysql.jdbc.Driver",
+            "jdbcUser": "root",
+            "optimisePaging": "",
+            "jdbcUrl": "jdbc:mysql://localhost/jwdb?characterEncoding=UTF8&useSSL=false",
+            "jdbcPassword": "%%%%Ksw+kQXnlFsHbvIUwfmQ/Q==%%%%",
+            "jdbcDatasource": "custom",
+            "sql": "SELECT * FROM inventory_items",
+            "primaryKey": "item_id"
+        }
+    },
+    "actions": [],
+    "order": ""
+}
