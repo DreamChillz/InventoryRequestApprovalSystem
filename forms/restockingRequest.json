@@ -64,21 +64,26 @@
                         "errorMessage": "Invalid number of rows",
                         "options": [
                             {
-                                "label": "Food ID",
-                                "value": "foodID"
+                                "label": "Item ID",
+                                "value": "item_id"
                             },
                             {
-                                "label": "Food Name",
-                                "value": "foodName"
+                                "label": "Item Name",
+                                "value": "item_name"
                             },
                             {
-                                "label": "Quantity",
-                                "value": "quantity"
+                                "label": "Requested Quantity",
+                                "value": "requested_quantity"
                             }
                         ],
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
+                            "properties": {"validationrules": [{
+                                "validationType": "numeric",
+                                "message": "item ID should only be a number",
+                                "mandatory": "true",
+                                "fieldId": "item_id"
+                            }]}
                         },
                         "label": "Requested Items",
                         "id": "requested_items",
@@ -91,12 +96,20 @@
                 {
                     "className": "org.joget.apps.form.lib.TextArea",
                     "properties": {
-                        "readonly": "False",
-                        "label": "Text Area",
-                        "id": "field4",
+                        "requiredSanitize": "",
+                        "readonly": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "label": "Remarks",
+                        "id": "remarks",
+                        "placeholder": "",
                         "rows": "5",
                         "cols": "20",
-                        "readonlyLabel": "False"
+                        "value": "",
+                        "readonlyLabel": ""
                     }
                 }
             ],
