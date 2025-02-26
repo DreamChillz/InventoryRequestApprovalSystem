@@ -89,8 +89,29 @@
         }],
         "className": "org.joget.apps.form.model.Section",
         "properties": {
-            "label": "Section",
-            "id": "section1"
+            "visibilityControl": "",
+            "permissionReadonly": "",
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Restocking Status Confirmation Form",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityValue": "",
+            "regex": "",
+            "readonly": "",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "comment": "",
+            "id": "restocking_status_confirmation",
+            "join": "",
+            "readonlyLabel": ""
         }
     }],
     "className": "org.joget.apps.form.model.Form",
