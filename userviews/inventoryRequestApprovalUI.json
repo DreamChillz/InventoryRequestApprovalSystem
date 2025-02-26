@@ -26,27 +26,6 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
-                    "className": "org.joget.apps.userview.lib.InboxMenu",
-                    "properties": {
-                        "appFilter": "process",
-                        "list-customFooter": "",
-                        "cacheAllLinks": "",
-                        "assignment-customHeader": "",
-                        "assignment-customFooter": "",
-                        "label": "Inbox",
-                        "enableOffline": "",
-                        "customId": "",
-                        "buttonPosition": "bothLeft",
-                        "userviewCacheDuration": "20",
-                        "userviewCacheScope": "",
-                        "processId": "inventoryRequisitionProcess",
-                        "showPopup": "",
-                        "rowCount": "",
-                        "id": "24FA668BC15E4D997D680B90B9844262",
-                        "list-customHeader": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
                         "runProcessDirectly": "Yes",
@@ -88,27 +67,6 @@
                         "userviewCacheScope": "",
                         "rowCount": "",
                         "id": "4077B31BF30B4FFA088C123676A6E11D"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.DataListMenu",
-                    "properties": {
-                        "cacheAllLinks": "",
-                        "customHeader": "",
-                        "keyName": "",
-                        "customFooter": "",
-                        "label": "Approval Result",
-                        "enableOffline": "",
-                        "customId": "",
-                        "buttonPosition": "bothLeft",
-                        "datalistId": "requestApprovalList",
-                        "checkboxPosition": "left",
-                        "selectionType": "multiple",
-                        "userviewCacheDuration": "20",
-                        "cacheListAction": "",
-                        "userviewCacheScope": "",
-                        "rowCount": "",
-                        "id": "1B82287DC1604FF03041C42382A4EE5C"
                     }
                 }
             ],
