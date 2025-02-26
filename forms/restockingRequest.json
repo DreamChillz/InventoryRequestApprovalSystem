@@ -20,7 +20,7 @@
                         "style": "",
                         "id": "name",
                         "placeholder": "",
-                        "value": "",
+                        "value": "#currentUser.fullName#",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
