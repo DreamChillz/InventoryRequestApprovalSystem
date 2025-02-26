@@ -124,7 +124,7 @@
                 "className": "",
                 "properties": {}
             },
-            "label": "Request Restocking Form",
+            "label": "",
             "reverse": "",
             "storeBinder": {
                 "className": "org.joget.plugin.enterprise.DatabaseWizardStoreBinder",
