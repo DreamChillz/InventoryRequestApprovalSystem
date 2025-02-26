@@ -1,7 +1,28 @@
 {
     "elements": [{
         "elements": [{
-            "elements": [],
+            "elements": [{
+                "className": "org.joget.apps.form.lib.SubForm",
+                "properties": {
+                    "parentSubFormId": "",
+                    "permissionHidden": "",
+                    "readonly": "true",
+                    "loadBinder": {
+                        "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                        "properties": {}
+                    },
+                    "noframe": "",
+                    "formDefId": "approveRejectRequest",
+                    "subFormParentId": "",
+                    "id": "approvalResult",
+                    "label": "Approval Result",
+                    "storeBinder": {
+                        "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                        "properties": {}
+                    },
+                    "readonlyLabel": ""
+                }
+            }],
             "className": "org.joget.apps.form.model.Column",
             "properties": {"width": "100%"}
         }],
