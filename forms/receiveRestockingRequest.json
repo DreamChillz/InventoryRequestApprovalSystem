@@ -24,13 +24,62 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.form.lib.DatePicker",
+                    "properties": {
+                        "yearRange": "c-10:c+10",
+                        "dataFormat": "yyyy-MM-dd",
+                        "startDateFieldId": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "format": "",
+                        "label": "Date Ordered",
+                        "datePickerType": "dateTime",
+                        "currentDateAs": "",
+                        "endDateFieldId": "",
+                        "readonly": "",
+                        "allowManual": "",
+                        "workflowVariable": "",
+                        "id": "date_ordered",
+                        "placeholder": "",
+                        "disableWeekends": "",
+                        "value": "",
+                        "readonlyLabel": "",
+                        "format24hr": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.Radio",
                     "properties": {
-                        "fullWidth": "False",
-                        "readonly": "False",
-                        "label": "Radio",
-                        "id": "field2",
-                        "readonlyLabel": "False"
+                        "fullWidth": "true",
+                        "controlField": "",
+                        "readonly": "",
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "options": [
+                            {
+                                "label": "Pending Confirmation",
+                                "value": "Pending Confirmation",
+                                "grouping": "group1"
+                            },
+                            {
+                                "label": "Ordered",
+                                "value": "Ordered",
+                                "grouping": "group1"
+                            }
+                        ],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "label": "Status",
+                        "id": "status",
+                        "value": "",
+                        "readonlyLabel": ""
                     }
                 }
             ],
