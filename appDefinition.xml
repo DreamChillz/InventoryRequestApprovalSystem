@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>inventoryRequestApprovalSystem</appId>
    <id>inventoryRequestApprovalSystem</id>
    <version></version>
    <name>Inventory Request Approval System</name>
