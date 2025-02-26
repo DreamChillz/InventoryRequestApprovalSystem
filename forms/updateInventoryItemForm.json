@@ -3,6 +3,51 @@
         "elements": [{
             "elements": [
                 {
+                    "className": "org.joget.plugin.enterprise.ListGrid",
+                    "properties": {
+                        "validateMaxRow": "",
+                        "formDefId": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "pageSize": "20",
+                        "requestParams": [],
+                        "enableSorting": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "listId": "inventoryItem",
+                        "readonly": "",
+                        "deleteGridData": "",
+                        "sortField": "sort",
+                        "options": [],
+                        "id": "new_inventory_to_be_updated",
+                        "abortRelatedRunningProcesses": "",
+                        "height": "500",
+                        "showRowNumber": "",
+                        "disabledDelete": "",
+                        "validateMinRow": "",
+                        "submit-label-normal": "",
+                        "uniqueKey": "",
+                        "errorMessage": "Invalid number of rows",
+                        "deleteSubformData": "",
+                        "deleteMessage": "",
+                        "label": "New Inventory to be Updated",
+                        "buttonLabel": "",
+                        "deleteFiles": "",
+                        "loadBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "disabledAdd": "",
+                        "submit-label-readonly": "",
+                        "width": "900",
+                        "readonlyLabel": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
@@ -16,7 +61,7 @@
                                 "jdbcUser": "root",
                                 "jdbcUrl": "jdbc:mysql://localhost/jwdb?characterEncoding=UTF8&useSSL=false",
                                 "addEmpty": "true",
-                                "jdbcPassword": "%%%%2mzL9/vzP3ozI+fmvoX19A==%%%%",
+                                "jdbcPassword": "%%%%mztOwEiuC5AnDq14ukKWXQ==%%%%",
                                 "jdbcDatasource": "custom",
                                 "cacheInterval": "",
                                 "emptyLabel": "",
@@ -33,28 +78,6 @@
                         "label": "Select Inventory Item",
                         "id": "select_inventory_item",
                         "value": "",
-                        "readonlyLabel": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.SubForm",
-                    "properties": {
-                        "parentSubFormId": "",
-                        "permissionHidden": "",
-                        "readonly": "true",
-                        "loadBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "noframe": "",
-                        "formDefId": "updateRestockingStatus",
-                        "subFormParentId": "",
-                        "id": "field1",
-                        "label": "",
-                        "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
                         "readonlyLabel": ""
                     }
                 },
