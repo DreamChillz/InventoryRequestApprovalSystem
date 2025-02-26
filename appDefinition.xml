@@ -24,6 +24,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>activity4</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -55,6 +56,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>update_stock_delivery_status</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -78,7 +80,7 @@
                   <activityDefId>receive_restocking_request</activityDefId>
                   <formId>receiveRestockingRequest</formId>
                   <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
+                  <autoContinue>true</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
@@ -120,6 +122,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>runProcess</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -141,6 +144,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>update_inventory_database</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -306,30 +310,12 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>restockingRequest_assignment_process::restockingRequest_assp_applicant_hod</string>
-               <packageParticipant>
-                  <processDefId>restockingRequest_assignment_process</processDefId>
-                  <participantId>restockingRequest_assp_applicant_hod</participantId>
-                  <type>requesterHod</type>
-                  <value>runProcess</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>inventoryRequisitionProcess::staff</string>
                <packageParticipant>
                   <processDefId>inventoryRequisitionProcess</processDefId>
                   <participantId>staff</participantId>
                   <type>group</type>
                   <value>G-001;G-003</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>restockingRequest_assignment_process::restockingRequest_assp_applicant</string>
-               <packageParticipant>
-                  <processDefId>restockingRequest_assignment_process</processDefId>
-                  <participantId>restockingRequest_assp_applicant</participantId>
-                  <type>requester</type>
-                  <value>runProcess</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -348,15 +334,6 @@
                   <participantId>manager</participantId>
                   <type>group</type>
                   <value>G-001;G-002</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>restockingRequest_assignment_process::restockingRequest_assp_assignee</string>
-               <packageParticipant>
-                  <processDefId>restockingRequest_assignment_process</processDefId>
-                  <participantId>restockingRequest_assp_assignee</participantId>
-                  <type>workflowVariable</type>
-                  <value>assignee,user</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
