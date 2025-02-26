@@ -13,7 +13,6 @@
                <packageActivityForm>
                   <processDefId>inventoryRequisitionProcess</processDefId>
                   <activityDefId>activity3</activityDefId>
-                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -85,7 +84,6 @@
                <packageActivityForm>
                   <processDefId>inventoryRequisitionProcess</processDefId>
                   <activityDefId>runProcess</activityDefId>
-                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
