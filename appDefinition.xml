@@ -30,6 +30,15 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>inventoryRequisitionProcess::activity2</string>
+               <packageActivityForm>
+                  <processDefId>inventoryRequisitionProcess</processDefId>
+                  <activityDefId>activity2</activityDefId>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>inventoryRequisitionProcess::submitRequest</string>
                <packageActivityForm>
                   <processDefId>inventoryRequisitionProcess</processDefId>
