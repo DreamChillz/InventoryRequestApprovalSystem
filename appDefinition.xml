@@ -19,91 +19,21 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>inventoryRequisitionProcess::activity2</string>
+               <packageActivityForm>
+                  <processDefId>inventoryRequisitionProcess</processDefId>
+                  <activityDefId>activity2</activityDefId>
+                  <formId></formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>restockingRequestProcess::activity4</string>
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>activity4</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>inventoryRequisitionProcess::requestApproval</string>
-               <packageActivityForm>
-                  <processDefId>inventoryRequisitionProcess</processDefId>
-                  <activityDefId>requestApproval</activityDefId>
-                  <formId>approveRejectRequest</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>true</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::request_approval</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>request_approval</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>inventoryRequisitionProcess::runProcess</string>
-               <packageActivityForm>
-                  <processDefId>inventoryRequisitionProcess</processDefId>
-                  <activityDefId>runProcess</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::activity2</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>activity2</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::update_stock_delivery_status</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>update_stock_delivery_status</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::activity3</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>activity3</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::activity1</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>activity1</activityDefId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::receive_restocking_request</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>receive_restocking_request</activityDefId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -131,10 +61,63 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>inventoryRequisitionProcess::requestApproval</string>
+               <packageActivityForm>
+                  <processDefId>inventoryRequisitionProcess</processDefId>
+                  <activityDefId>requestApproval</activityDefId>
+                  <formId>approveRejectRequest</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>true</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>inventoryRequisitionProcess::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>inventoryRequisitionProcess</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId></formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequestProcess::update_stock_delivery_status</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequestProcess</processDefId>
+                  <activityDefId>update_stock_delivery_status</activityDefId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequestProcess::receive_restocking_request</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequestProcess</processDefId>
+                  <activityDefId>receive_restocking_request</activityDefId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>restockingRequestProcess::update_inventory_database</string>
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>update_inventory_database</activityDefId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>inventoryRequisitionProcess::approvalResult</string>
+               <packageActivityForm>
+                  <processDefId>inventoryRequisitionProcess</processDefId>
+                  <activityDefId>approvalResult</activityDefId>
+                  <formId>approvalResult</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -187,15 +170,6 @@
                   <participantId>supplier</participantId>
                   <type>group</type>
                   <value>G-004</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>process2::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>process2</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>adminUser</value>
                </packageParticipant>
             </entry>
             <entry>

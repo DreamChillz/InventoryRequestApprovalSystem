@@ -99,6 +99,16 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="724.9375,31.31250475292967"/>
                     </ExtendedAttributes>
                 </Activity>
+                <Activity Id="approvalResult" Name="Approval Result">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>staff</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="staff"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="660.0625,40.031254752929684"/>
+                    </ExtendedAttributes>
+                </Activity>
             </Activities>
             <Transitions>
                 <Transition From="submitRequest" Id="transition2" To="requestApproval">
@@ -122,12 +132,18 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
+                <Transition From="notifyApprovedRequest" Id="transition7" To="approvalResult">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="staff;manager;system"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=staff,CONNECTING_ACTIVITY_ID=submitRequest,X_OFFSET=78,Y_OFFSET=67.00000475292968,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=system,CONNECTING_ACTIVITY_ID=notifyApprovedRequest,X_OFFSET=574.0625,Y_OFFSET=64.0312394941406,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=system,CONNECTING_ACTIVITY_ID=notifyRejectedRequest,X_OFFSET=881.0625,Y_OFFSET=54.03125475292967,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=staff,CONNECTING_ACTIVITY_ID=approvalResult,X_OFFSET=814.875,Y_OFFSET=65.29166887646484,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="restockingRequestProcess" Name="Restocking Request Process">
