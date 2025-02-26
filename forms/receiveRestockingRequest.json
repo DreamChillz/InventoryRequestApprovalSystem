@@ -76,7 +76,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "workflowVariable": "",
+                        "workflowVariable": "select_status",
                         "label": "Select Status",
                         "id": "select_status",
                         "value": "",
