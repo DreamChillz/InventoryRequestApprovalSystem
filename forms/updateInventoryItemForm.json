@@ -57,13 +57,9 @@
                         "optionsBinder": {
                             "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
                             "properties": {
-                                "jdbcDriver": "com.mysql.jdbc.Driver",
                                 "useAjax": "",
-                                "jdbcUser": "root",
-                                "jdbcUrl": "jdbc:mysql://localhost/jwdb?characterEncoding=UTF8&useSSL=false",
                                 "addEmpty": "true",
-                                "jdbcPassword": "%%%%YVg+6Whwp8hEhetx6vPaIw==%%%%",
-                                "jdbcDatasource": "custom",
+                                "jdbcDatasource": "default",
                                 "cacheInterval": "",
                                 "emptyLabel": "",
                                 "sql": "Select item_name from inventory_items"
