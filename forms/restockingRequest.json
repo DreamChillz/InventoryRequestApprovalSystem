@@ -114,8 +114,14 @@
             "label": "Request Restocking Form",
             "reverse": "",
             "storeBinder": {
-                "className": "",
-                "properties": {}
+                "className": "org.joget.plugin.enterprise.DatabaseWizardStoreBinder",
+                "properties": {
+                    "autoHandleWorkflowVariable": "true",
+                    "keyColumn": "id",
+                    "jdbcDatasource": "default",
+                    "tableName": "app_fd_restocking_request",
+                    "autoHandleFiles": ""
+                }
             },
             "visibilityValue": "",
             "regex": "",
