@@ -1,7 +1,39 @@
 {
     "elements": [{
         "elements": [{
-            "elements": [],
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "parentSubFormId": "",
+                        "readonly": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "",
+                        "formDefId": "restockingRequest",
+                        "subFormParentId": "",
+                        "id": "restocking_request",
+                        "label": "Restocking Request",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "readonlyLabel": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.Radio",
+                    "properties": {
+                        "fullWidth": "False",
+                        "readonly": "False",
+                        "label": "Radio",
+                        "id": "field2",
+                        "readonlyLabel": "False"
+                    }
+                }
+            ],
             "className": "org.joget.apps.form.model.Column",
             "properties": {"width": "100%"}
         }],
