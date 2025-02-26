@@ -1,12 +1,42 @@
 {
+    "template": {
+        "className": "",
+        "properties": {}
+    },
     "rowActions": [],
-    "columns": [],
-    "name": "Items Restocking Request List",
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "id",
+            "id": "column_1",
+            "label": "ID",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "requested_items",
+            "id": "column_0",
+            "label": "requested_items",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "date_requested",
+            "id": "column_2",
+            "label": "Date Requested",
+            "sortable": "false"
+        }
+    ],
     "pageSize": "0",
     "orderBy": "",
     "description": "",
-    "id": "restockingRequest",
     "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "Items Restocking Request List",
+    "id": "restockingRequest",
     "binder": {
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {
@@ -21,6 +51,5 @@
         }
     },
     "actions": [],
-    "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "order": ""
 }
