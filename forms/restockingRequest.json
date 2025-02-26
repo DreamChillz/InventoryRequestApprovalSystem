@@ -127,11 +127,8 @@
             "visibilityControl": "",
             "permissionReadonly": "",
             "permission": {
-                "className": "org.joget.apps.userview.lib.GroupPermission",
-                "properties": {
-                    "orgId": "",
-                    "allowedGroupIds": ""
-                }
+                "className": "",
+                "properties": {}
             },
             "label": "",
             "reverse": "",
