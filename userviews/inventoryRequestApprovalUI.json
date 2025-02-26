@@ -26,6 +26,27 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "assignment-customFooter": "",
+                        "label": "Inbox",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "processId": "inventoryRequisitionProcess",
+                        "showPopup": "",
+                        "rowCount": "",
+                        "id": "24FA668BC15E4D997D680B90B9844262",
+                        "list-customHeader": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.userview.lib.RunProcess",
                     "properties": {
                         "runProcessDirectly": "Yes",
@@ -98,7 +119,7 @@
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
                         "orgId": "ORG-001",
-                        "allowedGroupIds": "G-003"
+                        "allowedGroupIds": ""
                     }
                 },
                 "comment": "",
