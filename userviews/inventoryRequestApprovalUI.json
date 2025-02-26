@@ -202,6 +202,38 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "",
+                        "actionOnCancel": "",
+                        "redirectTargetOnCancel": "top",
+                        "customFooter": "",
+                        "paramName": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "",
+                        "showInPopupDialog": "",
+                        "readonly": "",
+                        "cancelButtonLabel": "",
+                        "actionAfterSaved": "",
+                        "id": "8108BAA18D6C45C292088785E95FA887",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": "",
+                        "formId": "createInventory",
+                        "customHeader": "",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnComplete": "",
+                        "keyName": "",
+                        "label": "Create Inventory",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheScope": "",
+                        "readonlyLabel": "true"
+                    }
+                },
+                {
                     "className": "org.joget.plugin.enterprise.UniversalInboxMenu",
                     "properties": {
                         "list-customFooter": "",
