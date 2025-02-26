@@ -144,7 +144,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "3 - Restocking Request",
+        "name": "3 - Submit Restocking Request",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
