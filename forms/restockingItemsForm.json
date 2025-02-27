@@ -3,29 +3,36 @@
         "elements": [{
             "elements": [
                 {
-                    "className": "org.joget.apps.form.lib.TextField",
+                    "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "requiredSanitize": "",
-                        "maxlength": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "type": "numeric",
-                                "message": "",
-                                "mandatory": "true"
-                            }
-                        },
-                        "label": "Item_ID",
-                        "encryption": "",
+                        "controlField": "",
                         "readonly": "",
                         "size": "",
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "groupingColumn": "",
+                                "useAjax": "",
+                                "formDefId": "createInventory",
+                                "labelColumn": "item_id",
+                                "extraCondition": "",
+                                "cacheInterval": "",
+                                "emptyLabel": "",
+                                "idColumn": "item_id"
+                            }
+                        },
+                        "multiple": "",
+                        "options": [],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
                         "workflowVariable": "",
-                        "style": "",
+                        "label": "Item ID",
                         "id": "item_id",
-                        "placeholder": "",
                         "value": "",
-                        "readonlyLabel": "",
-                        "storeNumeric": ""
+                        "readonlyLabel": ""
                     }
                 },
                 {
