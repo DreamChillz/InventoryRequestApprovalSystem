@@ -9,17 +9,19 @@
                         "readonly": "",
                         "size": "",
                         "optionsBinder": {
-                            "className": "org.joget.apps.form.lib.FormOptionsBinder",
+                            "className": "org.joget.plugin.enterprise.DatabaseWizardOptionsBinder",
                             "properties": {
-                                "addEmptyOption": "true",
+                                "joins": [],
                                 "groupingColumn": "",
                                 "useAjax": "",
-                                "formDefId": "createInventory",
-                                "labelColumn": "item_id",
+                                "labelColumn": "id",
+                                "valueColumn": "id",
+                                "addEmpty": "true",
                                 "extraCondition": "",
-                                "cacheInterval": "",
+                                "jdbcDatasource": "default",
+                                "filters": [],
                                 "emptyLabel": "",
-                                "idColumn": "item_id"
+                                "tableName": "app_fd_inventory_item"
                             }
                         },
                         "multiple": "",
