@@ -40,7 +40,7 @@
                 "properties": {}
             },
             "label": "Item Name",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "item_name",
@@ -63,7 +63,7 @@
                 "properties": {}
             },
             "label": "Category",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "category",
@@ -86,7 +86,7 @@
                 "properties": {}
             },
             "label": "Current Quantity",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "current_quantity",
@@ -109,7 +109,7 @@
                 "properties": {}
             },
             "label": "Min Quantity",
-            "sortable": "false",
+            "sortable": "true",
             "datalist_type": "column",
             "exclude_export": "",
             "name": "min_quantity",
@@ -126,18 +126,48 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "price",
-            "id": "column_6",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
             "label": "Price",
-            "sortable": "false"
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "price",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_6",
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
-            "name": "dateModified",
-            "id": "column_5",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
             "label": "Date Modified",
-            "sortable": "false"
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "dateModified",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_5",
+            "alignment": ""
         }
     ],
     "draggabletable": "",
