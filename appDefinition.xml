@@ -9,17 +9,6 @@
          <name>Inventory Request Approval System</name>
          <packageActivityFormMap>
             <entry>
-               <string>updateInventoryQuantity::runProcess</string>
-               <packageActivityForm>
-                  <processDefId>updateInventoryQuantity</processDefId>
-                  <activityDefId>runProcess</activityDefId>
-                  <formId></formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>restockingRequestProcess::submit_restocking_request</string>
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
@@ -118,15 +107,6 @@
          </packageActivityFormMap>
          <packageActivityPluginMap>
             <entry>
-               <string>updateInventoryQuantity::deduct</string>
-               <packageActivityPlugin>
-                  <processDefId>updateInventoryQuantity</processDefId>
-                  <activityDefId>deduct</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_inventory_item\nSET c_current_quantity = c_current_quantity -  #form.item_restocking.requested_quantity#,\nWHERE id = #form.item_restocking.id#;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>inventoryRequisitionProcess::route1</string>
                <packageActivityPlugin>
                   <processDefId>inventoryRequisitionProcess</processDefId>
@@ -136,21 +116,12 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>updateInventoryQuantity::add</string>
+               <string>updateInventoryQuantity::route1</string>
                <packageActivityPlugin>
                   <processDefId>updateInventoryQuantity</processDefId>
-                  <activityDefId>add</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;UPDATE app_fd_inventory_item\nSET c_current_quantity = c_current_quantity +  #form.item_restocking.requested_quantity#,\nWHERE id = #form.item_restocking.id#;&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
-               <string>updateInventoryQuantity::tool2</string>
-               <packageActivityPlugin>
-                  <processDefId>updateInventoryQuantity</processDefId>
-                  <activityDefId>tool2</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}]}</pluginProperties>
+                  <activityDefId>route1</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;action&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Add&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition2&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;name&quot;:&quot;transition3&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -189,15 +160,6 @@
                   <participantId>supplier</participantId>
                   <type>group</type>
                   <value>G-001;G-004</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>process3::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>process3</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>adminUser</value>
                </packageParticipant>
             </entry>
             <entry>
