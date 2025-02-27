@@ -55,7 +55,7 @@
                         "style": "",
                         "id": "item_name",
                         "placeholder": "",
-                        "value": "#form.inventory_item.item_name#",
+                        "value": "#form.inventory_item.item_name[{form.item_restocking.item_id}]#",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
