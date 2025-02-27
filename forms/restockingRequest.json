@@ -57,12 +57,25 @@
                         "validateMaxRow": "",
                         "formDefId": "restockingItemsForm",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
+                            "properties": {"validationrules": [
+                                {
+                                    "validationType": "",
+                                    "message": "",
+                                    "mandatory": "true",
+                                    "fieldId": "item_id"
+                                },
+                                {
+                                    "validationType": "",
+                                    "message": "",
+                                    "mandatory": "true",
+                                    "fieldId": "requested_quantity"
+                                }
+                            ]}
                         },
                         "pageSize": "20",
                         "requestParams": [],
-                        "enableSorting": "",
+                        "enableSorting": "true",
                         "storeBinder": {
                             "className": "",
                             "properties": {}
@@ -92,6 +105,7 @@
                                 "value": "requested_quantity"
                             }
                         ],
+                        "sortField": "item_id",
                         "id": "requested_items",
                         "abortRelatedRunningProcesses": "",
                         "height": "500",
@@ -99,7 +113,7 @@
                         "disabledDelete": "",
                         "validateMinRow": "",
                         "submit-label-normal": "",
-                        "uniqueKey": "",
+                        "uniqueKey": "item_id",
                         "errorMessage": "Invalid number of rows",
                         "deleteSubformData": "",
                         "deleteMessage": "",
