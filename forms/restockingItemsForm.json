@@ -115,7 +115,7 @@
             "className": "org.joget.apps.form.lib.WorkflowFormBinder",
             "properties": {}
         },
-        "name": "Items Restocking Subform",
+        "name": "3.1 - Items Restocking Subform",
         "description": "",
         "postProcessorRunOn": "create",
         "permission": {
