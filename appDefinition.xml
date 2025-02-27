@@ -34,6 +34,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>activity4</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -55,6 +56,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>runProcess</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -108,6 +110,7 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>update_inventory_database</activityDefId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
