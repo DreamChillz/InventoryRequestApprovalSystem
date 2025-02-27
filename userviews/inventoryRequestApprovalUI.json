@@ -289,7 +289,7 @@
                         "label": "Manage Inventory",
                         "list-newLinkTarget": "",
                         "edit-lastButtonLabel": "",
-                        "buttonPosition": "bothLeft",
+                        "buttonPosition": "topLeft",
                         "edit-firstButtonLabel": "",
                         "add-saveButtonLabel": "Submit",
                         "edit-messageShowAfterComplete": "Item record updated successfully",
