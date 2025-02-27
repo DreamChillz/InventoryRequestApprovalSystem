@@ -28,7 +28,7 @@
                     "className": "org.joget.apps.form.lib.DatePicker",
                     "properties": {
                         "yearRange": "c-10:c+10",
-                        "dataFormat": "",
+                        "dataFormat": "#date.dd-MM-yyyy HH:mm:ss#",
                         "startDateFieldId": "",
                         "validator": {
                             "className": "",
@@ -45,7 +45,7 @@
                         "id": "date_received",
                         "placeholder": "",
                         "disableWeekends": "",
-                        "value": "",
+                        "value": "#date.dd-MM-yyyy HH:mm:ss#",
                         "readonlyLabel": "",
                         "format24hr": ""
                     }
