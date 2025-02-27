@@ -107,7 +107,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "workflowVariable": "",
+                        "workflowVariable": "action",
                         "label": "Add or Deduct from Inventory",
                         "id": "add_or_deduct_from_inventory",
                         "value": "",
