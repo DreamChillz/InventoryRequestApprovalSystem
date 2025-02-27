@@ -12,7 +12,7 @@
                             "className": "org.joget.plugin.enterprise.DatabaseWizardOptionsBinder",
                             "properties": {
                                 "joins": [],
-                                "groupingColumn": "",
+                                "groupingColumn": "c_item_name",
                                 "useAjax": "",
                                 "labelColumn": "id",
                                 "valueColumn": "id",
