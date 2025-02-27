@@ -16,15 +16,6 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "requested_items",
-            "id": "column_0",
-            "label": "requested_items",
-            "sortable": "false",
-            "datalist_type": "column"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
             "name": "date_requested",
             "id": "column_2",
             "label": "Date Requested",
