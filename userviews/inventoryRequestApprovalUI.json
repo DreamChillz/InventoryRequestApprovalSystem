@@ -379,6 +379,62 @@
                 "label": "Admin",
                 "id": "category-2E2D320EF8EB43316D298C317C12515D"
             }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.CrudMenu",
+                "properties": {
+                    "list-customFooter": "",
+                    "add-afterSavedRedirectUrl": "",
+                    "edit-customHeader": "",
+                    "editFormId": "createInventory",
+                    "edit-afterSavedRedirectParamName": "",
+                    "edit-saveButtonLabel": "",
+                    "list-showDeleteButton": "yes",
+                    "list-newButtonLabel": "",
+                    "edit-afterSavedRedirectUrl": "",
+                    "edit-prevButtonLabel": "",
+                    "add-afterSavedRedirectParamName": "",
+                    "customId": "createInventory_crud",
+                    "edit-afterSaved": "list",
+                    "list-deleteButtonLabel": "",
+                    "checkboxPosition": "left",
+                    "selectionType": "multiple",
+                    "add-customFooter": "",
+                    "addFormId": "createInventory",
+                    "edit-allowRecordTraveling": "",
+                    "id": "103f2dbe-1953-441b-896a-c9ffd350b37a",
+                    "rowCount": "true",
+                    "add-messageShowAfterComplete": "",
+                    "edit-readonlyLabel": "",
+                    "list-editLinkLabel": "",
+                    "add-cancelButtonLabel": "",
+                    "edit-afterSavedRedirectParamvalue": "",
+                    "edit-customFooter": "",
+                    "keyName": "",
+                    "label": "Manage 0 - Create Inventory Form",
+                    "add-customHeader": "",
+                    "edit-lastButtonLabel": "",
+                    "edit-readonly": "",
+                    "buttonPosition": "bothLeft",
+                    "edit-firstButtonLabel": "",
+                    "datalistId": "inventoryItem",
+                    "add-saveButtonLabel": "",
+                    "edit-nextButtonLabel": "",
+                    "edit-messageShowAfterComplete": "",
+                    "edit-moreActions": [],
+                    "list-moreActions": [],
+                    "add-afterSaved": "list",
+                    "edit-backButtonLabel": "",
+                    "add-afterSavedRedirectParamvalue": "",
+                    "list-customHeader": ""
+                }
+            }],
+            "properties": {
+                "id": "category-37920346-57d0-4eb4-9d42-807aef57860f",
+                "label": "<i class='fa fa-tasks'><\/i>Manage 0 - Create Inventory Form"
+            }
         }
     ],
     "properties": {
