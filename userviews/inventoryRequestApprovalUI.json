@@ -180,7 +180,7 @@
                         "showInPopupDialog": "",
                         "userviewCacheScope": "",
                         "actionAfterSaved": "",
-                        "runProcessSubmitLabel": "",
+                        "runProcessSubmitLabel": "Submit",
                         "id": "4B1004555BC344C8A8E6F125EB56522D",
                         "processDefId": "restockingRequestProcess",
                         "redirectUrlAfterComplete": "",
