@@ -3,37 +3,29 @@
         "elements": [{
             "elements": [
                 {
-                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "controlField": "",
-                        "readonly": "",
-                        "size": "",
-                        "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.DatabaseWizardOptionsBinder",
+                        "requiredSanitize": "",
+                        "maxlength": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
-                                "joins": [],
-                                "groupingColumn": "",
-                                "useAjax": "",
-                                "labelColumn": "c_item_id",
-                                "valueColumn": "id",
-                                "addEmpty": "",
-                                "extraCondition": "",
-                                "jdbcDatasource": "default",
-                                "filters": [],
-                                "tableName": "app_fd_inventory_item"
+                                "type": "numeric",
+                                "message": "",
+                                "mandatory": "true"
                             }
                         },
-                        "multiple": "",
-                        "options": [],
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "workflowVariable": "",
                         "label": "Item ID",
+                        "encryption": "",
+                        "readonly": "",
+                        "size": "",
+                        "workflowVariable": "",
+                        "style": "",
                         "id": "item_id",
+                        "placeholder": "",
                         "value": "",
-                        "readonlyLabel": ""
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
                     }
                 },
                 {
@@ -54,7 +46,7 @@
                         "style": "",
                         "id": "item_name",
                         "placeholder": "",
-                        "value": "#form.inventory_item.item_name[{form.item_restocking.item_id}]#",
+                        "value": "",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
