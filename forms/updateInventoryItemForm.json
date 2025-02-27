@@ -18,7 +18,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "listId": "restockingRequest",
+                        "listId": "newInventoryItemsUpdList",
                         "readonly": "true",
                         "deleteGridData": "",
                         "sortField": "sort",
@@ -46,49 +46,6 @@
                         "submit-label-readonly": "",
                         "width": "900",
                         "readonlyLabel": ""
-                    }
-                },
-                {
-                    "className": "org.joget.plugin.enterprise.AdvancedGrid",
-                    "properties": {
-                        "showRowNumber": "true",
-                        "validateMaxRow": "",
-                        "recordPerPage": "20",
-                        "disabledDelete": "",
-                        "validateMinRow": "",
-                        "formDefId": "restockingRequest",
-                        "uniqueKey": "",
-                        "errorMessage": "Invalid number of rows",
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "keyToSave": "9",
-                        "deleteMessage": "",
-                        "label": "New Inventory to be Updated",
-                        "notEmptySpaceScroll": "",
-                        "storeBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "search": "",
-                        "readonly": "",
-                        "loadBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "disabledAdd": "",
-                        "hint": "Click to edit. Tab to save.",
-                        "pagingOptions": "10,20,50,100",
-                        "options": [{
-                            "readonly": "",
-                            "width": "",
-                            "label": "Requested items",
-                            "formatType": "",
-                            "value": "c_requested_items"
-                        }],
-                        "id": "new_inventory_to_be_updated",
-                        "sortIndx": ""
                     }
                 },
                 {
