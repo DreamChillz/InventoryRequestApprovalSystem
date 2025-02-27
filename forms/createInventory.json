@@ -12,10 +12,10 @@
                             "properties": {
                                 "regex": "",
                                 "formDefId": "createInventory",
-                                "errorDuplicateMsg": "This id already exits",
+                                "errorDuplicateMsg": "This id already exist.",
                                 "mandatory": "true",
                                 "errorFormatMsg": "",
-                                "fieldId": "id"
+                                "fieldId": "item_id"
                             }
                         },
                         "label": "Item ID",
