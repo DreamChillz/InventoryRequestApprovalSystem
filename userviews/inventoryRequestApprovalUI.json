@@ -205,7 +205,27 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [],
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.InboxMenu",
+                "properties": {
+                    "appFilter": "process",
+                    "list-customFooter": "",
+                    "cacheAllLinks": "",
+                    "assignment-customHeader": "",
+                    "assignment-customFooter": "",
+                    "label": "Inbox",
+                    "enableOffline": "",
+                    "customId": "",
+                    "buttonPosition": "bothLeft",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "processId": "restockingRequestProcess",
+                    "showPopup": "",
+                    "rowCount": "",
+                    "id": "EEB0DE2A4B51412FA60F9E194EEFA697",
+                    "list-customHeader": ""
+                }
+            }],
             "properties": {
                 "hide": "",
                 "permission_rules": {},
@@ -339,7 +359,7 @@
     "properties": {
         "logoutText": "Logout",
         "welcomeMessage": "#date.EEE, d MMM yyyy#",
-        "name": "Inventory Request Approval System UI",
+        "name": "Inventory Request Approval System",
         "description": "",
         "footerMessage": "Powered by Joget",
         "id": "inventoryRequestApprovalUI"
