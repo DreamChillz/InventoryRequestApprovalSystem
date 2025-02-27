@@ -283,7 +283,7 @@
                         "add-customFooter": "",
                         "list-deleteGridData": "",
                         "edit-allowRecordTraveling": "",
-                        "rowCount": "",
+                        "rowCount": "true",
                         "edit-customFooter": "",
                         "keyName": "",
                         "label": "Manage Inventory",
