@@ -1,18 +1,63 @@
 {
-    "rowActions": [],
-    "columns": [],
-    "name": "New Inventory Items Pending Update List",
-    "pageSize": "0",
-    "orderBy": "",
-    "description": "",
-    "id": "newInventoryItemsUpdList",
-    "filters": [],
-    "binder": {
-        "name": "",
+    "template": {
         "className": "",
         "properties": {}
     },
-    "actions": [],
+    "rowActions": [],
+    "columns": [
+        {
+            "className": "org.joget.apps.datalist.lib.RowNumberColumn",
+            "id": "column_7",
+            "properties": {
+                "label": "Row Number",
+                "id": "column_7"
+            }
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "item_id",
+            "id": "column_6",
+            "label": "Item ID",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "item_name",
+            "id": "column_8",
+            "label": "Item Name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "requested_quantity",
+            "id": "column_9",
+            "label": "Requested Quantity",
+            "sortable": "false"
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "",
+    "description": "",
+    "filters": [],
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "New Inventory Items Pending Update List",
+    "id": "newInventoryItemsUpdList",
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {
+            "joins": [],
+            "aggregateField": [],
+            "formDefId": "restockingItemsForm",
+            "customSelectionValue": "",
+            "extraCondition": "",
+            "filters": [],
+            "groupBy": "",
+            "functionColumns": []
+        }
+    },
+    "actions": [],
     "order": ""
 }
