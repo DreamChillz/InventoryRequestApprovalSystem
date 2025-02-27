@@ -12,15 +12,14 @@
                             "className": "org.joget.plugin.enterprise.DatabaseWizardOptionsBinder",
                             "properties": {
                                 "joins": [],
-                                "groupingColumn": "c_item_name",
+                                "groupingColumn": "",
                                 "useAjax": "",
-                                "labelColumn": "id",
+                                "labelColumn": "c_item_id",
                                 "valueColumn": "id",
-                                "addEmpty": "true",
+                                "addEmpty": "",
                                 "extraCondition": "",
                                 "jdbcDatasource": "default",
                                 "filters": [],
-                                "emptyLabel": "",
                                 "tableName": "app_fd_inventory_item"
                             }
                         },
@@ -55,7 +54,7 @@
                         "style": "",
                         "id": "item_name",
                         "placeholder": "",
-                        "value": "#form.inventory_item.item_name[form.item_restocking.item_id]#",
+                        "value": "#form.inventory_item.item_name[{form.item_restocking.item_id}]#",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
