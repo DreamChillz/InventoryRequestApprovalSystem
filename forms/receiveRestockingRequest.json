@@ -45,7 +45,7 @@
                         "id": "date_received",
                         "placeholder": "",
                         "disableWeekends": "",
-                        "value": "#date.dd-MM-yyyy HH:mm:ss#",
+                        "value": "#currentUser.dateTimeFormat#",
                         "readonlyLabel": "",
                         "format24hr": ""
                     }
