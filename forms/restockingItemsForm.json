@@ -32,6 +32,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "requiredSanitize": "",
+                        "permissionHidden": "",
                         "maxlength": "",
                         "validator": {
                             "className": "",
@@ -39,13 +40,13 @@
                         },
                         "label": "Item Name",
                         "encryption": "",
-                        "readonly": "",
+                        "readonly": "true",
                         "size": "",
                         "workflowVariable": "",
                         "style": "",
                         "id": "item_name",
                         "placeholder": "",
-                        "value": "#form.inventory_item.item_id#",
+                        "value": "#form.inventory_item.item_name#",
                         "readonlyLabel": "",
                         "storeNumeric": ""
                     }
@@ -54,7 +55,7 @@
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "requiredSanitize": "",
-                        "maxlength": "",
+                        "maxlength": "11",
                         "validator": {
                             "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
@@ -66,7 +67,7 @@
                         "label": "Requested Quantity",
                         "encryption": "",
                         "readonly": "",
-                        "size": "",
+                        "size": "11",
                         "workflowVariable": "",
                         "style": "",
                         "id": "requested_quantity",
