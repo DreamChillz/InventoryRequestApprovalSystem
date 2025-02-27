@@ -11,10 +11,25 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "item_id",
-            "id": "column_7",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
             "label": "Item ID",
-            "sortable": "false"
+            "sortable": "true",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "name": "item_id",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
+            "id": "column_7",
+            "alignment": ""
         },
         {
             "filterable": true,
