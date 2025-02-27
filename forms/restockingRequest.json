@@ -52,51 +52,67 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.Grid",
+                    "className": "org.joget.plugin.enterprise.FormGrid",
                     "properties": {
                         "validateMaxRow": "",
+                        "formDefId": "restockingItemsForm",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "pageSize": "20",
+                        "requestParams": [],
+                        "enableSorting": "",
+                        "storeBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
                         "readonly": "",
+                        "deleteGridData": "",
+                        "options": [
+                            {
+                                "format": "",
+                                "width": "",
+                                "label": "Item ID",
+                                "formatType": "text",
+                                "value": "item_id"
+                            },
+                            {
+                                "format": "",
+                                "width": "",
+                                "label": "Item Name",
+                                "formatType": "text",
+                                "value": "item_name"
+                            },
+                            {
+                                "format": "",
+                                "width": "",
+                                "label": "Requested Quantity",
+                                "formatType": "text",
+                                "value": "requested_quantity"
+                            }
+                        ],
+                        "id": "requested_items",
+                        "abortRelatedRunningProcesses": "",
+                        "height": "500",
+                        "showRowNumber": "",
+                        "disabledDelete": "",
+                        "validateMinRow": "",
+                        "submit-label-normal": "",
+                        "uniqueKey": "",
+                        "errorMessage": "Invalid number of rows",
+                        "deleteSubformData": "",
+                        "deleteMessage": "",
+                        "label": "Requested Items",
+                        "deleteFiles": "",
                         "loadBinder": {
                             "className": "",
                             "properties": {}
                         },
-                        "validateMinRow": "",
-                        "errorMessage": "Invalid number of rows",
-                        "options": [
-                            {
-                                "label": "Item ID",
-                                "value": "item_id"
-                            },
-                            {
-                                "label": "Item Name",
-                                "value": "item_name"
-                            },
-                            {
-                                "label": "Requested Quantity",
-                                "value": "requested_quantity"
-                            }
-                        ],
-                        "validator": {
-                            "className": "org.joget.plugin.enterprise.MultirowBasicValidator",
-                            "properties": {"validationrules": [{
-                                "validationType": "numeric",
-                                "message": "item ID should only be a number",
-                                "mandatory": "true",
-                                "fieldId": "item_id"
-                            }]}
-                        },
-                        "label": "Requested Items",
-                        "id": "requested_items",
-                        "storeBinder": {
-                            "className": "org.joget.plugin.enterprise.DatabaseWizardStoreBinder",
-                            "properties": {
-                                "autoHandleWorkflowVariable": "true",
-                                "keyColumn": "id",
-                                "jdbcDatasource": "default",
-                                "tableName": "app_fd_restocking_request",
-                                "autoHandleFiles": ""
-                            }
-                        }
+                        "disabledAdd": "",
+                        "submit-label-readonly": "",
+                        "width": "900",
+                        "readonlyLabel": ""
                     }
                 },
                 {
