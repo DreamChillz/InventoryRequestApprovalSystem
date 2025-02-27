@@ -11,42 +11,102 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "id",
-            "id": "column_0",
-            "label": "ID",
+            "name": "item_id",
+            "id": "column_7",
+            "label": "Item ID",
             "sortable": "false"
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Item Name",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "item_name",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_1",
-            "label": "item_name",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Category",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "category",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_4",
-            "label": "category",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Current Quantity",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "current_quantity",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_2",
-            "label": "current_quantity",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Min Quantity",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "min_quantity",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_3",
-            "label": "min_quantity",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
