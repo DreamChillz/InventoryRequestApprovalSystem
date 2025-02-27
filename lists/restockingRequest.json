@@ -11,14 +11,47 @@
             "name": "id",
             "id": "column_1",
             "label": "ID",
+            "sortable": "false",
+            "datalist_type": "column"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "item_id",
+            "id": "column_0",
+            "label": "Item ID",
             "sortable": "false"
         },
         {
             "filterable": true,
             "hidden": "false",
-            "name": "date_requested",
+            "name": "item_name",
             "id": "column_2",
-            "label": "Date Requested",
+            "label": "Item Name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "requested_quantity",
+            "id": "column_3",
+            "label": "Requested Quantity",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "restocking_request.date_requested",
+            "id": "column_4",
+            "label": "restocking_request.date_requested",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "restocking_request.name",
+            "id": "column_5",
+            "label": "restocking_request.name",
             "sortable": "false"
         }
     ],
@@ -33,12 +66,12 @@
         "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {
             "joins": [{
-                "joinFieldId": "id",
-                "tableName": "inventory_item",
-                "fieldId": "inventory_item.item_id"
+                "joinFieldId": "item_id",
+                "tableName": "restocking_request",
+                "fieldId": ""
             }],
             "aggregateField": [],
-            "formDefId": "restockingRequest",
+            "formDefId": "restockingItemsForm",
             "customSelectionValue": "",
             "extraCondition": "",
             "filters": [],
