@@ -13,17 +13,6 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>submit_restocking_request</activityDefId>
-                  <formId>restockingRequest</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>true</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
-               <string>restockingRequestProcess::activity4</string>
-               <packageActivityForm>
-                  <processDefId>restockingRequestProcess</processDefId>
-                  <activityDefId>activity4</activityDefId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -37,6 +26,16 @@
                   <formId>submitInventoryRequest</formId>
                   <type>SINGLE</type>
                   <autoContinue>true</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>restockingRequestProcess::activity4</string>
+               <packageActivityForm>
+                  <processDefId>restockingRequestProcess</processDefId>
+                  <activityDefId>activity4</activityDefId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
@@ -76,9 +75,8 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>update_stock_delivery_status</activityDefId>
-                  <formId>updateRestockingStatus</formId>
                   <type>SINGLE</type>
-                  <autoContinue>true</autoContinue>
+                  <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
@@ -87,9 +85,8 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>receive_restocking_request</activityDefId>
-                  <formId>receiveRestockingRequest</formId>
                   <type>SINGLE</type>
-                  <autoContinue>true</autoContinue>
+                  <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
@@ -98,7 +95,6 @@
                <packageActivityForm>
                   <processDefId>restockingRequestProcess</processDefId>
                   <activityDefId>update_inventory_database</activityDefId>
-                  <formId>updateInventoryItemForm</formId>
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
@@ -113,15 +109,6 @@
                   <activityDefId>route1</activityDefId>
                   <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
                   <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;status&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Approve&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition4&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;name&quot;:&quot;transition5&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
-               <string>updateInventoryQuantity::route1</string>
-               <packageActivityPlugin>
-                  <processDefId>updateInventoryQuantity</processDefId>
-                  <activityDefId>route1</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
-                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;andOr&quot;:&quot;and&quot;,&quot;revert&quot;:false,&quot;conditions&quot;:[{&quot;variable&quot;:&quot;action&quot;,&quot;revert&quot;:false,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;Add&quot;}],&quot;actions&quot;:[{&quot;name&quot;:&quot;transition2&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;name&quot;:&quot;transition3&quot;,&quot;type&quot;:&quot;transition&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -159,7 +146,7 @@
                   <processDefId>restockingRequestProcess</processDefId>
                   <participantId>supplier</participantId>
                   <type>group</type>
-                  <value>G-001;G-004</value>
+                  <value>G-004</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -176,8 +163,8 @@
                <packageParticipant>
                   <processDefId>restockingRequestProcess</processDefId>
                   <participantId>processStartWhiteList</participantId>
-                  <type>group</type>
-                  <value>G-001;G-002</value>
+                  <type>role</type>
+                  <value>adminUser</value>
                </packageParticipant>
             </entry>
             <entry>
@@ -187,15 +174,6 @@
                   <participantId>manager</participantId>
                   <type>group</type>
                   <value>G-001;G-002</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>updateInventoryQuantity::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>updateInventoryQuantity</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>adminUser</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
